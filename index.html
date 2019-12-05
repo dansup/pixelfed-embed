@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pixelfed Embed Test</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<style type="text/css">
 		html, body {
 			background: #f5f8fa;
@@ -13,18 +14,22 @@
 	</style>
 </head>
 <body>
-<div style="padding-top: 3rem; display: flex; justify-content: center;align-items: center;">
-	<div style="max-width: 300px;">
-		<h1>Pixelfed Embed</h1>
-		<p>Now Available!</p>
+	<div class="container">
+		<div class="row pt-5">
+			<div class="col-12 col-md-4 mb-3 d-flex align-items-center">
+				<div>
+					<h1>Pixelfed Embed</h1>
+					<p>Now Available!</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 mb-3">
+				<iframe src="https://pixelfed.social/p/dansup/104105623926476800/embed?caption=true&likes=true" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+			</div>
+			<div class="col-12 col-md-4 mb-3">
+				<iframe src="https://pixelfed.social/dansup/embed" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
+			</div>
+		</div>
 	</div>
-	<div style="padding:0 2rem;">
-		<iframe src="https://pixelfed.social/p/dansup/104105623926476800/embed?caption=true&likes=true" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
-	</div>
-	<div style="padding:0 2rem;">
-		<iframe src="https://pixelfed.social/dansup/embed" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe>
-	</div>
-</div>
 <script src="https://pixelfed.social/embed.js" async="async"></script>
 </body>
 </html>
